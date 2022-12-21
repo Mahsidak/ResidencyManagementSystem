@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EEDCD7FE-B920-4633-BA29-9943901A6F5B}</ProjectGuid>
+    <ProjectGuid>{75AF4095-DFAC-4A1B-9558-CDE61A00D6B9}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>ResidencyManagementSystem</RootNamespace>
-    <AssemblyName>ResidencyManagementSystem</AssemblyName>
+    <RootNamespace>WindowsFormsAppProject1</RootNamespace>
+    <AssemblyName>WindowsFormsAppProject1</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,16 +46,110 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CredentialPage.cs">
+    <Compile Include="AddEmployeeAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CredentialPage.Designer.cs">
-      <DependentUpon>CredentialPage.cs</DependentUpon>
+    <Compile Include="AddEmployeeAdmin.Designer.cs">
+      <DependentUpon>AddEmployeeAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddHomeOwners.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddHomeOwners.Designer.cs">
+      <DependentUpon>AddHomeOwners.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeAdminPassowrd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeAdminPassowrd.Designer.cs">
+      <DependentUpon>ChangeAdminPassowrd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonUtilityBills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommonUtilityBills.Designer.cs">
+      <DependentUpon>CommonUtilityBills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess.cs" />
+    <Compile Include="Manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager.Designer.cs">
+      <DependentUpon>Manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerChangePassword.Designer.cs">
+      <DependentUpon>ManagerChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveHomeOwners.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveHomeOwners.Designer.cs">
+      <DependentUpon>RemoveHomeOwners.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RermoveEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RermoveEmployee.Designer.cs">
+      <DependentUpon>RermoveEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchEmployeeAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchEmployeeAdmin.Designer.cs">
+      <DependentUpon>SearchEmployeeAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginAdmin.Designer.cs">
+      <DependentUpon>LoginAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="CredentialPage.resx">
-      <DependentUpon>CredentialPage.cs</DependentUpon>
+    <Compile Include="SearchHomeOwners.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchHomeOwners.Designer.cs">
+      <DependentUpon>SearchHomeOwners.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowUtilityBills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowUtilityBills.Designer.cs">
+      <DependentUpon>ShowUtilityBills.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddEmployeeAdmin.resx">
+      <DependentUpon>AddEmployeeAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddHomeOwners.resx">
+      <DependentUpon>AddHomeOwners.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeAdminPassowrd.resx">
+      <DependentUpon>ChangeAdminPassowrd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonUtilityBills.resx">
+      <DependentUpon>CommonUtilityBills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginAdmin.resx">
+      <DependentUpon>LoginAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager.resx">
+      <DependentUpon>Manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerChangePassword.resx">
+      <DependentUpon>ManagerChangePassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -66,6 +160,21 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RemoveHomeOwners.resx">
+      <DependentUpon>RemoveHomeOwners.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RermoveEmployee.resx">
+      <DependentUpon>RermoveEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchEmployeeAdmin.resx">
+      <DependentUpon>SearchEmployeeAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchHomeOwners.resx">
+      <DependentUpon>SearchHomeOwners.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowUtilityBills.resx">
+      <DependentUpon>ShowUtilityBills.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

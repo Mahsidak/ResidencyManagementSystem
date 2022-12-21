@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ResidencyManagementSystem
+namespace WindowsFormsAppProject1
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace ResidencyManagementSystem
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CredentialPage());
+            Application.Run(new AdminLoginForm());
         }
     }
 }
